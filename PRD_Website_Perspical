@@ -1,0 +1,265 @@
+# Product Requirements Document — Website Perspical
+
+**Versi:** 1.0  
+**Tanggal:** 30 September 2026  
+**Status:** Siap sebagai dasar desain dan implementasi; beberapa aset dan keputusan operasional masih perlu dilengkapi  
+**Pemilik produk:** Perspical  
+**Target implementasi:** Website publik dengan CMS yang dapat dikelola tim internal. Prototipe WordPress yang telah terhubung dapat menjadi lingkungan implementasi; spesifikasi produk ini tidak bergantung pada satu tema atau page builder.
+
+## 1. Ringkasan produk
+
+Perspical adalah firma konsultasi strategi **agentic AI** yang membantu pimpinan organisasi membangun sistem pengambilan keputusan dan alur kerja yang dapat terus digunakan dan disempurnakan. Layanan mencakup sebelum implementasi, selama pembangunan dan penerapan, serta setelah sistem berjalan. Keluaran yang dikomunikasikan website harus konkret: diagnosis, kasus bisnis, model keputusan, agen dan workflow, tata kelola, pengukuran adopsi, serta perbaikan berkelanjutan.
+
+Website harus membantu calon klien memahami **masalah yang ditangani, bentuk pekerjaan, hasil yang diterima, dan cara memulai percakapan**. Insights menerbitkan artikel yang mudah dibaca. Publications menerbitkan paper atau laporan riset dengan halaman detail dan berkas PDF yang dapat diunduh. Seluruh identitas, label, metadata, dan komunikasi publik memakai nama **Perspical**.
+
+**Pernyataan posisi yang dapat menjadi dasar copy:** “From snapshot advice to a problem-solving machine.” Copy akhir boleh disunting, tetapi maknanya harus tetap: dari rekomendasi sesaat menuju sistem kerja yang bertahan.
+
+### Dasar isi dari company profile
+
+| Halaman profil | Fakta yang menjadi dasar PRD |
+|---|---|
+| 1–2 | Posisi sebagai firma bespoke agentic AI strategy consulting; hasil berupa intelligence system, bukan hanya rekomendasi. |
+| 3–6 | Siklus layanan tiga tahap: Pre-Implementation, In-Progress Implementation, Post-Implementation; masing-masing memiliki empat area layanan utama. |
+| 7 | Fokus pada 12 klaster BUMN Indonesia dan perluasan ke institusi finansial swasta, operator energi, serta perusahaan bertumbuh. |
+| 8 | Tujuh kapabilitas fungsional: Strategy & Decision Architecture; Operations & Process Intelligence; Technology & Agent Systems; Risk, Governance & Resilience; People & Organizational Performance; Growth & Commercial Intelligence; Transformation & Change Enablement. |
+| 9 | Tiga model engagement: Diagnostic Sprint, Build & Deploy, Managed Intelligence Partner. |
+| 10 | Riset unggulan tentang cognitive-load equivalence dan human redeployment, bertanggal Juli 2026. Profil menyatakan naskah lengkap tersedia atas permintaan; kebutuhan website mengubah mekanisme ini menjadi unduhan langsung setelah PDF yang berhak dipublikasikan siap. |
+
+## 2. Tujuan, pengguna, dan ukuran keberhasilan
+
+### Tujuan bisnis
+
+1. Menjelaskan posisi dan diferensiasi Perspical dalam satu kunjungan singkat.
+2. Menghasilkan inquiry berkualitas dari organisasi yang ingin menilai kesiapan, membangun, atau mengevaluasi sistem agentic AI.
+3. Menunjukkan kedalaman pemikiran melalui Insights dan Publications yang rutin diperbarui.
+4. Memungkinkan tim internal menerbitkan artikel dan paper tanpa bantuan pengembang untuk setiap unggahan.
+
+### Pengguna utama
+
+| Pengguna | Pertanyaan utama | Tindakan yang diharapkan |
+|---|---|---|
+| Pimpinan perusahaan/BUMN dan pemilik keputusan | Masalah apa yang dapat diselesaikan dan apa hasil bisnisnya? | Membaca pendekatan, lalu menghubungi Perspical. |
+| Pemimpin transformasi, operasi, teknologi, data, dan risiko | Bagaimana sistem dibangun, diintegrasikan, diawasi, dan diukur? | Menjelajahi layanan/kapabilitas dan mengirim konteks proyek. |
+| Tim riset, akademisi, dan calon mitra | Apa gagasan serta bukti yang dipublikasikan? | Membaca Insights dan mengunduh PDF Publications. |
+| Editor internal | Bagaimana menerbitkan konten dengan benar dan konsisten? | Membuat draft, meninjau, menjadwalkan, memperbarui, atau mengarsipkan konten. |
+
+### KPI awal (target usulan; tetapkan baseline setelah situs aktif)
+
+- Inquiry valid per bulan dan proporsi inquiry yang memuat organisasi, kebutuhan, serta tahap proyek.
+- Rasio kunjungan halaman layanan → klik CTA kontak dan rasio pengiriman formulir berhasil.
+- Tampilan halaman Insights, waktu keterlibatan, serta kunjungan dari pencarian organik.
+- Tampilan detail Publications, klik/unduhan PDF, dan persentase unduhan berhasil.
+- Persentase halaman inti yang terindeks, serta jumlah error formulir, tautan, dan berkas.
+- Target awal operasional: 100% halaman inti berfungsi di desktop dan mobile, 100% publication berstatus publik memiliki PDF valid, dan tidak ada konten contoh yang tampil sebagai fakta.
+
+## 3. Ruang lingkup dan prioritas
+
+**MVP / P0:** Home, About, Services, Industries, Capabilities, Insights (listing dan artikel), Publications (listing, detail, unduhan PDF), Contact, komponen global, CMS konten, SEO dasar, analitik, keamanan formulir, aksesibilitas dan performa dasar.
+
+**P1 setelah konten/operasional siap:** pencarian lintas Insights dan Publications, filter lanjutan, newsletter berizin, studi kasus yang sudah disetujui, halaman tim yang datanya telah diverifikasi, bilingual EN/ID, dan integrasi CRM. Jangan menampilkan menu untuk halaman kosong.
+
+**Di luar MVP:** akun pengguna, paywall, pembayaran, pembelian paper, personalisasi AI/chatbot, otomasi proposal, klaim ROI tanpa data, dan logo/nama klien sebagai bukti tanpa izin.
+
+## 4. Arsitektur informasi dan URL
+
+| Navigasi | URL usulan | Fungsi |
+|---|---|---|
+| Home | `/` | Posisi, bukti pendekatan, tiga tahap, pilihan engagement, konten terbaru, CTA. |
+| About | `/about/` | Siapa Perspical, prinsip kerja, diferensiasi, tata cara kolaborasi. |
+| Services | `/services/` | Ikhtisar tiga tahap dan navigasi ke detail tahap. |
+| Pre-Implementation | `/services/pre-implementation/` | Diagnosis, prioritas, audit, governance sebelum build. |
+| In-Progress Implementation | `/services/implementation/` | Pembangunan, deployment, pilot ke skala, governance. |
+| Post-Implementation | `/services/post-implementation/` | Adopsi, beban kerja, redeployment, audit kematangan. |
+| Capabilities | `/capabilities/` | Tujuh kemampuan lintas tahap dan contoh output. |
+| Industries | `/industries/` | Sektor/klaster yang dilayani; tidak menyiratkan semua institusi yang dicontohkan sebagai klien. |
+| Insights | `/insights/` dan `/insights/{slug}/` | Artikel editorial. |
+| Publications | `/publications/` dan `/publications/{slug}/` | Paper/laporan dengan metadata dan PDF. |
+| Contact | `/contact/` | Form inquiry dan kanal kontak resmi. |
+| Legal | `/privacy/`, `/terms/` bila perlu | Penggunaan data form, unduhan, dan hak cipta. |
+
+Header desktop memuat **Services, Capabilities, Industries, Insights, Publications, About** dan CTA **Contact**. Mobile menggunakan menu yang dapat dioperasikan dengan keyboard. Footer memuat navigasi ringkas, kontak resmi, sosial yang benar-benar aktif, copyright, dan kebijakan privasi. Breadcrumb tersedia pada detail layanan, artikel, dan paper. URL kanonis memakai domain final setelah diputuskan, bukan alamat tunnel atau domain sementara.
+
+## 5. Kebutuhan halaman dan konten
+
+### 5.1 Home
+
+1. **Hero:** satu headline yang menjelaskan nilai inti, subheadline yang menyebut sistem keputusan/agentic workflow dan tiga tahap kerja; CTA primer “Discuss your challenge”, CTA sekunder “Explore services”. Jangan mengarang angka hasil atau daftar klien.
+2. **Masalah → keluaran:** gambarkan perbedaan antara rekomendasi yang berhenti di dokumen dan sistem yang dapat dijalankan tim. Sertakan contoh output yang benar-benar ditawarkan.
+3. **Three-stage arc:** Pre-Implementation → In-Progress Implementation → Post-Implementation; setiap tahap punya tujuan, contoh pekerjaan, hasil, dan tautan detail.
+4. **Engagement models:** Diagnostic Sprint (dalam profil: sekitar 3–4 minggu), Build & Deploy (dalam profil: sekitar 8–12 minggu), Managed Intelligence Partner (ongoing retainer). Durasi disajikan sebagai indikasi dan dikonfirmasi saat scoping.
+5. **Why Perspical:** keterlibatan senior, sistem yang dapat dioperasikan tim klien, perpaduan penilaian strategis dan engineering, serta tanggung jawab lintas siklus. Bukti/klaim hanya yang dapat diverifikasi.
+6. **Latest thinking:** maksimal 2–3 Insights terbaru dan 1–2 Publications terbaru; blok otomatis hilang bila belum ada konten terbit.
+7. **CTA akhir:** undangan menjelaskan tantangan organisasi, tanpa janji hasil spesifik sebelum diagnosis.
+
+### 5.2 About
+
+Jelaskan posisi firma, siapa yang dibantu, cara bekerja, prinsip “sistem yang dimiliki dan dijalankan tim klien”, serta hubungan antara strategi, engineering, governance, dan dampak pada pekerjaan manusia. Boleh memuat metodologi ringkas dan model engagement. Profil individu, jumlah orang, lokasi kantor, sertifikasi, testimoni, dan klien hanya tampil setelah terverifikasi/diizinkan.
+
+### 5.3 Services
+
+Halaman ikhtisar menampilkan hubungan tiga tahap sebagai satu siklus dan jalur masuk berdasarkan kondisi pengunjung. Detail tiap tahap memuat **siapa yang cocok, pertanyaan yang dijawab, empat layanan inti, keluaran yang dapat diharapkan, bentuk keterlibatan, dan CTA**.
+
+| Tahap | Layanan inti dari profil | Contoh hasil yang perlu dijelaskan |
+|---|---|---|
+| Pre-Implementation | AI Readiness & Opportunity Diagnostic; Use-Case Prioritization & Business Case; Data & Infrastructure Audit; Governance & Risk Framework Design. | Peta peluang, daftar prioritas dengan value/feasibility/risk, penilaian kesiapan data, model pengawasan. |
+| In-Progress Implementation | Agentic Workflow Build & Deployment; Decision Intelligence System Build; Pilot-to-Scale Playbook; Embedded Governance Rollout. | Workflow/agen yang berjalan, model keputusan, kriteria go/no-go, audit trail serta pelatihan tim pemilik. |
+| Post-Implementation | Adoption & Performance Monitoring; Cognitive-Load & Workload Rebalancing; Redeployment & Reskilling Design; Governance Audit & Maturity Assessment. | Evaluasi adopsi dan nilai, peta perpindahan beban kognitif, rancangan peran, audit governance berkala. |
+
+### 5.4 Capabilities
+
+Tampilkan tujuh kapabilitas dari profil sebagai penjelas lintas layanan, bukan tujuh paket yang otomatis dijual terpisah. Masing-masing memuat deskripsi singkat, contoh masalah, contoh output, keterkaitan dengan tahap, dan tautan kontak. Hindari duplikasi paragraf Services.
+
+### 5.5 Industries
+
+Daftar 12 klaster dari profil: Energy, Oil & Gas; Mining & Minerals; Plantation & Forestry; Fertilizer & Food; Healthcare; Manufacturing; Financial Services; Insurance & Pension Funds; Telecommunications & Media; Infrastructure; Tourism, Logistics & Other Services; Transport Facilities & Infrastructure. Tambahkan penjelasan “Beyond BUMN” untuk institusi finansial swasta, operator energi, dan perusahaan bertumbuh. Nama institusi dalam profil adalah **ilustrasi cakupan sektor**, bukan daftar klien. Bila contoh institusi dipakai, labelnya harus jelas “contoh institusi di sektor ini” dan disetujui secara editorial.
+
+### 5.6 Contact
+
+Form: nama, email kerja, organisasi, jabatan (opsional), area minat/tahap (opsional), ringkasan tantangan, persetujuan pemrosesan data, dan tombol “Send inquiry”. Field yang wajib: nama, email, organisasi, ringkasan, persetujuan. Tampilkan pesan berhasil/gagal yang jelas; cegah pengiriman ganda. Email tujuan dan SLA respons dipasang hanya setelah dikonfirmasi. Kontak yang disebut dalam profil lama tidak otomatis dianggap kanal resmi Perspical.
+
+## 6. Insights — blog post
+
+**Tujuan:** memberikan analisis, perspektif, panduan, dan pembaruan yang dapat dibaca langsung di website. Artikel tidak harus memiliki PDF.
+
+**Listing:** urut terbaru dahulu; gambar sampul atau art direction editorial, judul, ringkasan, tanggal, estimasi waktu baca, kategori/topik, pagination; filter topik yang bekerja dan keadaan kosong yang jelas. Di mobile kartu turun ke satu kolom tanpa memotong judul. Tautan seluruh kartu dan CTA “Read insight” menuju detail yang sama.
+
+**Detail:** judul, deck/ringkasan, tanggal publikasi, penulis bila terverifikasi, kategori, hero image beserta alt text, isi dengan heading semantik, daftar, visual/caption bila perlu, sumber/rujukan, related insights, CTA kontak kontekstual. Konten mendukung tautan internal ke Services atau Publications. Tanggal update ditampilkan bila revisi substantif.
+
+**Topik awal yang disarankan berdasarkan profil:** AI Strategy; Agentic Systems; Decision Intelligence; Governance & Risk; Workforce & Cognitive Load; Adoption & Performance. Editor dapat menambah topik tanpa membuat sinonim duplikat.
+
+**Contoh judul untuk perencanaan, bukan artikel faktual siap terbit:** “Memilih use case agentic AI berdasarkan nilai, kelayakan, dan risiko”; “Apa yang perlu diukur setelah AI go-live?” Setiap artikel harus ditulis dan ditinjau sebelum publikasi.
+
+## 7. Publications — paper dengan PDF
+
+**Tujuan:** menampilkan riset formal dalam halaman yang dapat ditemukan mesin pencari dan memungkinkan pengunjung mengunduh PDF yang sah untuk dibagikan.
+
+**Listing:** cover/thumbnail, jenis publikasi, judul, penulis, tahun/tanggal, abstrak pendek, topik, CTA “View publication”, indikator “PDF available” hanya saat berkas siap. Urutan terbaru; filter jenis dan topik, pagination, keadaan kosong.
+
+**Detail:** judul lengkap, penulis/afiliasi yang disetujui, tanggal, jenis, abstrak, kata kunci, nomor versi, jumlah halaman (bila tersedia), DOI/tautan sitasi (bila ada), cover, daftar isi/ringkasan temuan bila tersedia, copyright/lisensi, CTA utama **“Download PDF”**, tautan karya terkait, dan kontak untuk pertanyaan. Halaman tetap berguna tanpa harus membuka PDF.
+
+**Perilaku unduhan:** PDF asli disimpan pada media storage situs; klik CTA membuka/mengunduh berkas valid dengan nama berkas yang mudah dikenali, tanpa login dan tanpa meminta email pada MVP. Tautan langsung stabil, HTTPS, tipe `application/pdf`, tidak mengarah ke 404, dan tercatat sebagai event analitik tanpa menyimpan isi berkas atau data pribadi pengunjung. Berkas diganti melalui versi baru dengan metadata versi/tanggal; tautan lama ditangani agar tidak rusak. Tidak ada tombol unduh jika PDF tidak tersedia atau belum disetujui; editor dapat menyimpan draft atau menampilkan status “Coming soon” hanya bila sengaja diputuskan, tanpa tautan palsu.
+
+**Karya awal yang tercantum di profil:** *Beyond Output Substitution: Measuring Cognitive-Load Equivalence in AI-Enabled Workload Analysis and Human Redeployment* (manuskrip riset, Juli 2026). Buat draft metadata dan ringkasan berdasarkan profil, lalu terbitkan unduhan setelah file PDF final, hak distribusi, penulis, dan versi dikonfirmasi. Jangan menyatakan paper telah diunduh atau peer reviewed bila belum ada dasar.
+
+**Format yang dapat didukung:** research paper, white paper, report, policy brief, working paper. Label jenis harus akurat. Metadata opsional seperti DOI, ISBN, penerbit, atau institusi hanya muncul ketika ada nilainya.
+
+## 8. Model data CMS dan alur editorial
+
+| Entitas | Field wajib | Field opsional/aturan |
+|---|---|---|
+| Insight | title, slug unik, excerpt, body, publish date, status, topik, SEO title/description | cover, alt text, author, updated date, related content. Slug tetap stabil setelah terbit atau dibuat 301. |
+| Publication | title, slug unik, abstract, type, authors, year/date, topic, status, SEO title/description | cover, alt, PDF, file version, page count, keywords, DOI, license, citation, related service. Status publik dengan label downloadable mensyaratkan PDF valid. |
+| Service | name, stage, summary, problem, scope, outputs, CTA | FAQ, visual, related insights/publications. |
+| Capability | name, summary, related stages | use case contoh, related content. |
+| Industry | name, summary | contoh institusi yang diberi label dan disetujui. |
+| Inquiry | timestamp, nama, email, organisasi, pesan, consent | stage, role, source page, status internal; akses terbatas. |
+
+**Hak akses:** Administrator mengelola situs dan integrasi; Editor menyunting serta menerbitkan konten; Author menulis draft tanpa hak menerbitkan; reviewer konten/riset menyetujui substansi dan lisensi PDF melalui proses internal. Minimum dua pemeriksaan sebelum terbitnya paper: akurasi metadata dan izin distribusi. Simpan revisi, jadwal terbit, preview draft, serta jejak siapa dan kapan konten diubah.
+
+**Validasi di CMS:** slug unik; excerpt dan alt text pada gambar bermakna; topik terpilih; tautan internal valid; file PDF sesuai tipe/ukuran yang ditetapkan server; publikasi tidak bertanda “PDF available” jika file hilang; area terkait otomatis tersembunyi bila kosong. Kompres gambar otomatis dan gunakan format modern bila didukung.
+
+## 9. Perjalanan pengguna dan kebutuhan fungsional
+
+| ID | Kebutuhan | Prioritas | Kriteria penerimaan |
+|---|---|---|---|
+| FR-01 | Navigasi global dan halaman inti | P0 | Pengguna mencapai setiap halaman inti dari header/footer; menu mobile dan keyboard berfungsi; tautan tidak buntu. |
+| FR-02 | Discovery layanan tiga tahap | P0 | Setiap tahap mempunyai halaman detail, daftar output dan CTA; hubungan antar tahap dapat dipahami tanpa jargon berlebihan. |
+| FR-03 | Insights listing, filter, detail | P0 | Artikel terbit tampil menurut tanggal terbaru, filter topik mengubah hasil, pagination konsisten, artikel draft tidak publik. |
+| FR-04 | Publications listing, detail, unduh | P0 | Setiap item berstatus downloadable punya PDF valid; klik dari detail menghasilkan berkas yang terbuka; metadata cocok dengan PDF. |
+| FR-05 | Pencarian/filter editorial | P0 filter, P1 search | Filter punya URL/state yang dapat diulang; reset mengembalikan semua hasil; kombinasi kosong menampilkan pesan yang membantu. |
+| FR-06 | Form inquiry | P0 | Validasi field jelas; consent wajib; spam ditangani; kiriman berhasil tersimpan/terkirim ke penerima resmi; pengguna melihat status. |
+| FR-07 | CMS editorial | P0 | Editor dapat membuat, preview, menjadwalkan, menerbitkan, merevisi, dan mengarsipkan dua jenis konten secara terpisah. |
+| FR-08 | Related content dan CTA | P0 | Tautan kontekstual relevan, tidak menampilkan placeholder ketika belum ada konten. |
+| FR-09 | Analitik | P0 | Event inquiry submit dan PDF download tercatat sekali per aksi; data dapat dipilah menurut halaman/jenis konten tanpa mengirim isi pesan form. |
+| FR-10 | Berbagi/metadata | P0 | Detail Insight/Publication punya title, description, canonical, Open Graph image yang benar dan dapat dibagikan. |
+
+**Alur A:** calon klien tiba di Home → memilih tahap layanan → memahami output dan model engagement → mengisi Contact → mendapat konfirmasi.  
+**Alur B:** pembaca datang dari pencarian → membaca Insight → membuka riset/layanan terkait → menghubungi Perspical bila relevan.  
+**Alur C:** pengunjung membuka Publication → membaca abstrak dan metadata → mengunduh PDF → dapat kembali ke halaman detail.  
+**Alur D:** editor membuat draft Publication → mengunggah PDF dan cover → reviewer memeriksa metadata/hak → preview → terbit → link unduhan diuji.
+
+## 10. Arah pengalaman dan desain
+
+**Rujukan yang dikunci:** identitas dan logo Perspical yang sudah tersedia bagi tim, company profile untuk struktur informasi dan gagasan visual, serta basis tata letak yang telah dipilih pengguna pada proyek Perspical. PRD ini tidak mengunci ulang font/hex code tanpa berkas brand guideline final. Tema utama **terang, profesional, proporsi terukur, ruang putih cukup, tipografi sans yang jelas**, teks navy/gelap dan aksen teal/hijau sesuai identitas Perspical yang telah disetujui. Halaman riset harus nyaman dibaca dalam durasi panjang.
+
+- Home membuat satu kesan kuat melalui headline dan visual/diagram kerja yang bermakna. Gunakan ilustrasi sistem, diagram sederhana, atau aset editorial yang disetujui; hindari gambar AI generik.
+- Selang-seling section, garis pemisah, tipografi, dan ruang putih; gunakan kartu bila mewakili item klik seperti artikel/paper, bukan sebagai pembungkus semua paragraf.
+- Hover, focus, dan active state konsisten; hover memberi umpan balik halus pada tautan/kartu tanpa gerakan besar. Semua fungsi hover tetap tersedia lewat tap dan keyboard.
+- Hero dan section tidak terlalu besar sehingga informasi penting tetap terlihat pada laptop umum. Batasi lebar baris artikel agar nyaman dibaca. Mobile memiliki padding cukup dan tombol yang mudah disentuh.
+- Cover Publications terasa seperti sampul dokumen riset, bukan poster promosi. Gunakan placeholder yang jelas jika cover belum tersedia; jangan membuat sampul palsu berisi klaim riset.
+- Desain final dibandingkan terhadap basis visual yang disetujui sebelum implementasi. Konten, affordance unduhan, dan keterbacaan lebih penting daripada efek dekoratif.
+
+## 11. Kebutuhan nonfungsional
+
+### Performa dan kompatibilitas
+
+- Target awal halaman publik pada mobile: LCP ≤ 2,5 detik, CLS ≤ 0,1, INP ≤ 200 ms pada kondisi lapangan bila data mencukupi; gunakan audit lab sebagai panduan awal, bukan jaminan skor.
+- Gambar responsif, lazy load di bawah fold, font secukupnya, animasi hormati `prefers-reduced-motion`, dan PDF tidak dimuat otomatis di listing.
+- Uji pada Chrome, Safari, Firefox, Edge versi yang didukung, desktop dan ponsel umum; breakpoint paling sempit 320 px.
+
+### Aksesibilitas
+
+- Target WCAG 2.2 AA: struktur heading, label form, alt text yang informatif, kontras, fokus terlihat, navigasi keyboard, status error/sukses yang dapat dibaca screen reader, serta target sentuh memadai.
+- PDF yang diterbitkan diupayakan memiliki teks yang dapat dipilih, judul dokumen, urutan baca, dan tag aksesibilitas; sediakan abstrak HTML pada detail sebagai konteks tambahan.
+
+### Keamanan, privasi, dan reliabilitas
+
+- HTTPS pada domain final, update CMS/plugin rutin, backup dan pemulihan, pembatasan hak admin, spam protection dan rate limit pada form, validasi upload PDF, sanitasi input, proteksi terhadap malware, serta audit log editorial.
+- Kebijakan privasi menjelaskan data inquiry, tujuan, penerima, dan masa simpan yang disahkan organisasi. Tidak mengirim konten pesan atau email ke analitik. Cookie/consent disesuaikan dengan alat analitik yang akhirnya dipilih dan ketentuan yang berlaku.
+- PDF hanya diunggah oleh peran berwenang. Pastikan lisensi gambar, hak cipta paper, persetujuan penulis, dan izin menampilkan pihak ketiga.
+- Tersedia monitoring uptime, error 404/500, kegagalan form dan unduhan; backup teruji sebelum rilis.
+
+## 12. SEO, distribusi, dan migrasi
+
+- Struktur URL mudah dibaca, sitemap XML, robots yang benar di produksi, canonical per halaman, metadata unik, schema `Organization`, `Article`/`BlogPosting` dan `ScholarlyArticle` atau `Report` hanya bila metadata mendukung; validasi data terstruktur.
+- Open Graph image dan share preview untuk halaman utama, Insight, Publication; internal linking kontekstual; arsip topik tidak membuat halaman tipis yang tidak bernilai.
+- Gunakan judul dan abstrak HTML yang terindeks untuk setiap paper; PDF boleh terindeks jika memang distribusi publik dikehendaki, dengan metadata dokumen konsisten. Pastikan tidak ada duplikasi halaman detail dari parameter filter.
+- Jika mengganti situs/domain yang sudah memiliki URL publik, inventaris URL dan trafik terlebih dahulu, buat peta 301 per halaman yang relevan, perbarui aset/tautan internal, dan cek Search Console setelah rilis. Jangan membuat redirect spekulatif sebelum domain dan URL lama dipastikan.
+- Bahasa utama saat rilis diputuskan pemilik produk. Copy English dari profil dapat menjadi draft bahasa Inggris; bila ID/EN aktif, kedua versi harus lengkap dan `hreflang` benar. Jangan campur bahasa dalam satu halaman karena konten belum diterjemahkan.
+
+## 13. Konten awal dan kebutuhan aset
+
+| Aset/keputusan | Kebutuhan sebelum publikasi | Status dalam dokumen ini |
+|---|---|---|
+| Logo, warna, font, ikon resmi Perspical | File final/brand guideline dan izin penggunaan | Perlu diserahkan/ditetapkan; arah visual sementara tidak menggantikan guideline. |
+| Domain dan email kontak Perspical | Domain final, DNS/SSL, mailbox penerima, siapa yang menindaklanjuti | Belum dikonfirmasi. |
+| Copy halaman inti | Review positioning, rincian output, durasi engagement, bahasa situs | Draf dari profil; perlu persetujuan bisnis. |
+| Profil tim, klien, testimoni, foto proyek | Fakta, izin, dan materi asli | Tidak ditampilkan sampai siap. |
+| Insight awal | Disarankan 3 artikel berkualitas agar filter dan related content berguna | Judul/topik dapat direncanakan; teks akhir belum tersedia. |
+| Publication awal | PDF final riset unggulan, metadata penulis/versi, izin unduh publik | Profil hanya menyebut tersedia atas permintaan; unduhan belum boleh diklaim siap. |
+| Visual dan cover | Sampul riset, aset diagram, alt text, lisensi | Perlu produksi/penyerahan. |
+| Dokumen legal | Privacy policy dan kebijakan hak cipta/unduhan | Perlu persetujuan penanggung jawab. |
+
+## 14. Rencana implementasi dan urutan rilis
+
+1. **Content and brand lock:** tetapkan domain, bahasa, aset logo, warna/font, copy yang disetujui, inventaris PDF, hak distribusi, dan kanal inquiry.
+2. **Struktur dan desain:** wireframe untuk Home, Services detail, Insights listing/detail, Publications listing/detail, Contact; uji desktop/mobile dan review bersama pemilik produk.
+3. **CMS dan template:** tipe konten, taxonomy, field, peran editorial, template halaman, navigasi, filter dan form.
+4. **Pengisian dan QA:** masukkan konten asli, validasi fakta, unggah PDF, cek semua alur, aksesibilitas, metadata, kecepatan, tautan, backup.
+5. **Rilis:** domain final, analytics, sitemap, pemantauan form/unduhan, peta redirect bila ada migrasi.
+6. **30 hari pertama:** pantau inquiry dan unduhan, perbaiki hambatan yang terbukti, jadwalkan ritme penerbitan konten.
+
+## 15. Definition of done / UAT
+
+Website siap dirilis bila:
+
+1. Semua halaman P0 terisi konten yang disetujui, identitas Perspical konsisten, dan tidak ada placeholder/dummy sebagai fakta.
+2. Jalur Home → Services → Contact berhasil pada desktop dan mobile; kiriman form diterima kanal resmi dan pesan keberhasilan tampil.
+3. Insights dapat diterbitkan dari CMS, muncul di daftar terbaru, filter topik bekerja, detail terbaca, dan draft tidak dapat diakses publik.
+4. Publications dapat diterbitkan terpisah dari Insights; setiap tombol unduh publik menghasilkan PDF yang tepat, lengkap, dan diizinkan; item tanpa PDF tidak menawarkan unduhan.
+5. Navigasi keyboard, fokus, label form, kontras, gambar, serta alur unduh lulus pemeriksaan aksesibilitas manual pada template utama.
+6. Tidak ada tautan rusak, error konsol kritis, halaman tidak terindeks akibat pengaturan staging, atau form/unduhan gagal dalam pengujian penerimaan.
+7. SEO title/description, canonical, social preview, sitemap, analytics event, backup, dan akses editorial diperiksa di domain final.
+
+## 16. Keputusan terbuka untuk pemilik produk
+
+1. Bahasa rilis: English, Bahasa Indonesia, atau keduanya dengan konten lengkap.
+2. Domain, email resmi, tujuan form, penanggung jawab dan target waktu balasan.
+3. Persetujuan copy akhir, logo/brand guideline, serta basis desain final.
+4. File PDF final untuk paper unggulan, penulis/afiliasi, lisensi, dan izin distribusi langsung.
+5. Apakah newsletter diperlukan pada fase berikutnya; bila ya, platform dan mekanisme consent.
+6. Nama/logo organisasi yang boleh ditampilkan sebagai klien atau studi kasus, jika ada.
+
+---
+
+**Catatan editorial:** Company profile digunakan untuk posisi, layanan, sektor, kapabilitas, model engagement, dan ringkasan riset. Hal-hal yang tidak dibuktikan profil (misalnya daftar klien aktual, performa proyek, alamat baru, domain/email baru, jumlah tim, status review akademik paper) sengaja tidak dijadikan klaim website.
